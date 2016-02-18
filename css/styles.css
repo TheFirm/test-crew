@@ -7,3 +7,13 @@
     justify-content: center;
     margin-top: 20px;
 }
+
+.generated-link--wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.generated-link {
+    font-size: 30px;
+}
