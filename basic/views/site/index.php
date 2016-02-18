@@ -23,8 +23,6 @@ $this->title = 'My Yii Application';
     </div>
 
     <div class="redirect-form">
-
-
         <?php
         $form = ActiveForm::begin([
             'id' => 'login-form',
@@ -51,6 +49,10 @@ $this->title = 'My Yii Application';
             http://test-link.test
         </a>
     </div>
+
+     <footer>
+            <img class="footer__logo" src="img/your-logo-here2.png" alt=""/>
+    </footer>
 </div>
 </body>
 </html>
