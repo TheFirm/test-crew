@@ -53,7 +53,17 @@ class SiteController extends Controller
 
         $model = new Urls();
 
-        return $this->render('index', ['model' => $model]);
+        if (Yii::$app->request->getIsPost()) {
+            $model->setAttributes($_POST['Urls']);
+
+            //     var_dump($_POST);
+
+            $model->save();
+        }
+
+        $urls = Urls::find()->all();
+
+        return $this->render('index', ['model' => $model, 'urls' => $urls]);
     }
 
     public function actionLogin()
