@@ -53,10 +53,6 @@ class SiteController extends Controller
 
         $model = new Urls();
 
-        if($this->re){
-
-        }
-
         return $this->render('index', ['model' => $model]);
     }
 
