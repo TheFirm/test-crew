@@ -2,6 +2,7 @@
 
 /* @var $this yii\web\View */
 
+use yii\bootstrap\Tabs;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
@@ -32,7 +33,7 @@ $this->title = 'My Yii Application';
         <div class="form-group">
             <label class="sr-only" for="exampleInputAmount"></label>
             <div class="input-group">
-               <!-- <input type="text" class="form-control" id="exampleInputAmount" placeholder="Your link">-->
+                <!-- <input type="text" class="form-control" id="exampleInputAmount" placeholder="Your link">-->
                 <?= $form->field($model, 'original_url'); ?>
             </div>
         </div>
@@ -45,9 +46,30 @@ $this->title = 'My Yii Application';
     </div>
 
     <div class="generated-link--wrapper">
-        <a href="" class="generated-link">
+   <!--     <a href="" class="generated-link">
             http://test-link.test
-        </a>
+        </a>-->
+        <?php
+
+
+        echo Tabs::widget([
+            'items' => [
+                [
+                    'label' => 'Statistic',
+                    'content' => '',
+
+                ],
+                [
+                    'label' => 'My links',
+                    'content' => '',
+                    'active' => true
+                ],
+            ],
+        ]);
+
+
+        ?>
+
     </div>
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="uhtshka">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
