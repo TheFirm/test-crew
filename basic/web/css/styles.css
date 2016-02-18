@@ -49,3 +49,9 @@ footer {
     display: inline-block;
     margin-right: 20px;
 }
+
+@media all and (max-width: 768px) {
+    .footer__links {
+        margin-top: 10px;
+    }
+}
