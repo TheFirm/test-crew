@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Urls;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -49,7 +50,14 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+
+        $model = new Urls();
+
+        if($this->re){
+
+        }
+
+        return $this->render('index', ['model' => $model]);
     }
 
     public function actionLogin()
