@@ -15,12 +15,20 @@ $this->title = 'My Yii Application';
     <link href="bower_components/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script>
+
+        $()
+        
+    </script>
 </head>
 <body>
 <div class="container">
     <div class="logo">
         <img src="img/your-logo-here2.png" alt="" class="logo__picture"/>
     </div>
+    <button class="btn" data-clipboard-target="#generated-link-box">
+        <img src="assets/clippy.svg" alt="Copy to clipboard">
+    </button>
 
     <div class="redirect-form">
         <?php
@@ -45,7 +53,7 @@ $this->title = 'My Yii Application';
     </div>
 
     <div class="generated-link--wrapper">
-        <a href="" class="generated-link">
+        <a href="" class="generated-link" id="generated-link-box">
             http://test-link.test
         </a>
     </div>
