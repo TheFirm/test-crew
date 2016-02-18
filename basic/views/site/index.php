@@ -49,10 +49,10 @@ $this->title = 'My Yii Application';
             http://test-link.test
         </a>
     </div>
-
-     <footer>
-            <img class="footer__logo" src="img/your-logo-here2.png" alt=""/>
-    </footer>
 </div>
+
+<footer>
+    <img class="footer__logo" src="img/your-logo-here2.png" alt=""/>
+</footer>
 </body>
 </html>
