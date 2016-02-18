@@ -1,0 +1,9 @@
+.logo {
+    text-align: center;
+}
+
+.redirect-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
