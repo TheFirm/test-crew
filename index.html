@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
     <div class="logo">
-
         <img src="img/your-logo-here2.png" alt="" class="logo__picture"/>
     </div>
+
+    <div class="redirect-form">
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputAmount"></label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Your link">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Generate</button>
+        </form>
+    </div>
+
+    <a href="" class="generated-link">
+
+    </a>
 </div>
 </body>
 </html>
